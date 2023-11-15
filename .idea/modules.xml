@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Tigie.iml" filepath="$PROJECT_DIR$/Tigie.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Tigie.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Tigie.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Tigie.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Tigie.app.androidTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Tigie.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Tigie.app.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Tigie.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Tigie.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Tigie2.iml" filepath="$PROJECT_DIR$/.idea/modules/Tigie2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Tigie2.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Tigie2.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Tigie2.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Tigie2.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Tigie2.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Tigie2.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Tigie2.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Tigie2.app.unitTest.iml" />
     </modules>
   </component>
 </project>
