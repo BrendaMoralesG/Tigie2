@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/cvChapters"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="5dp"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/colorDiverColor">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:src="@drawable/z_geo"
+                android:id="@+id/iconAladiCountryr"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:id="@+id/nameCountryCompe"
+                android:text="Corea del sur"
+                android:textSize="18dp"
+                android:layout_marginTop="12dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="18dp"
+                android:textColor="@color/colorPrimaryDark4"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="@color/colorAzul2"
+            android:padding="25dip"
+            android:id="@+id/fill_parentAla1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:id="@+id/flagIconCompe"
+            android:src="@drawable/z_coreadelsur"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="@color/colorAzul2"
+            android:padding="25dip"
+            android:id="@+id/fill_parentCompe2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:src="@drawable/z_rate"
+                android:id="@+id/iconAladiRate"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTasa"
+                android:visibility="visible"
+                android:text="Tasa : "
+                android:layout_gravity="center"
+                android:textColor="@color/colorVerde"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_above="@+id/rateCompe"
+                android:layout_alignLeft="@+id/linearLayout"
+                android:layout_alignStart="@+id/linearLayout" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rateCompe"
+                android:visibility="visible"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:text="0.49 USD por KILO"
+                style="@style/styleCode1"
+                android:layout_above="@+id/fill_parent"
+                android:layout_alignLeft="@+id/tvTasa"
+                android:layout_alignStart="@+id/tvTasa" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rateTextCompe"
+            android:visibility="visible"
+            android:layout_marginLeft="10dp"
+            android:text="Tasa Provisional"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/colorRed"
+            android:layout_below="@+id/fill_parent"
+            android:layout_alignLeft="@+id/tvTasa"
+            android:layout_alignStart="@+id/tvTasa" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textCompe"
+            android:layout_marginLeft="10dp"
+            android:visibility="visible"
+            android:text=""
+            style="@style/styleCode1"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/rateTextCompe"
+            android:layout_alignLeft="@+id/rateTextCompe"
+            android:layout_alignStart="@+id/rateTextCompe" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="@color/colorAzul2"
+            android:padding="25dip"
+            android:id="@+id/fill_parentCompe4"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout5"
+            android:layout_below="@+id/textCompe"
+            android:layout_alignLeft="@+id/textCompe"
+            android:layout_alignStart="@+id/textCompe">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/z_dof3"
+                android:id="@+id/iconCompeDof"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:id="@+id/dofCompen"
+                android:visibility="visible"
+                android:layout_marginLeft="18dp"
+                android:gravity="center"
+                android:text="DOF"
+                android:textColor="@color/colorRed"
+                android:layout_below="@+id/textCompe"
+                android:layout_alignLeft="@+id/textCompe"
+                android:layout_alignStart="@+id/textCompe"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout3"
+            android:layout_alignLeft="@+id/textCompe"
+            android:layout_alignStart="@+id/textCompe"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/textCompe">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/z_agremment2"
+                android:id="@+id/iconCompeAgreement"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/applicateCompen"
+                android:visibility="visible"
+                android:layout_gravity="center"
+                android:text=""
+                android:layout_marginLeft="15dp"
+                style="@style/styleCode1"
+                android:layout_below="@+id/textCompe"
+                android:layout_alignLeft="@+id/textCompe"
+                android:layout_alignStart="@+id/textCompe"
+                android:layout_weight="0.31" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout4"
+            android:layout_below="@+id/linearLayout3"
+            android:layout_alignLeft="@+id/linearLayout3"
+            android:layout_alignStart="@+id/linearLayout3"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/z_effective"
+                android:id="@+id/iconCompeEffective"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:id="@+id/effectiveCompen"
+                android:visibility="visible"
+                android:layout_marginLeft="15dp"
+                android:layout_gravity="center"
+                android:text=""
+                android:textColor="@color/colorVigencia"
+                android:layout_below="@+id/textCompe"
+                android:layout_alignLeft="@+id/textCompe"
+                android:layout_alignStart="@+id/textCompe"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

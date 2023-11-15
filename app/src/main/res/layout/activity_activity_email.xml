@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include android:id="@+id/miActionBar"
+        layout="@layout/actionbar">
+    </include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:context="com.example.sistemascasa.tigie.settings.ActivityEmail"
+                android:background="#FFFEF9">
+
+
+
+                <LinearLayout
+                    android:id="@+id/lyTextViewTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/TextViewTitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="*"
+                        android:textColor="@color/colorVigencia"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+
+                        android:id="@+id/TextViewTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/texto_email"
+                        android:textColor="@color/colorPrimaryDark4"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="5dp"/>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/space2"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="#FFFEF9"
+                    android:layout_below="@+id/lyTextViewTitle"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/lyEmailName"
+                    android:layout_below="@+id/space2"
+                    android:layout_marginLeft="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/EmailName"
+                        android:layout_width="match_parent"
+                        android:layout_height="21dp"
+                        android:text="@string/e_name"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        />
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/editTextName"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/email_name"
+                    android:textColorHint="#F0D595"
+                    android:textColor="#0fcfda"
+                    android:inputType="textPersonName"
+                    android:layout_width="fill_parent"
+                    android:layout_below="@id/lyEmailName"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    />
+
+                <View
+                    android:id="@+id/space10"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="#FFFEF9"
+                    android:layout_below="@+id/editTextName"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/lyEmailPass"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@+id/space3">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/lyPassCorreo"
+                        android:layout_width="match_parent"
+                        android:layout_height="21dp"
+                        android:text="Contraseña"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="18dp"
+                        android:inputType="textEmailAddress"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/editTextPass"
+                    android:layout_height="wrap_content"
+                    android:hint="Ingrese su contraseñao"
+                    android:textColorHint="#F0D595"
+                    android:textColor="#0fcfda"
+                    android:layout_width="fill_parent"
+                    android:layout_below="@id/lyPassCorreo"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    />
+
+                <View
+                    android:id="@+id/space3"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="#FFFEF9"
+                    android:layout_below="@+id/editTextName"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/lyEmailCorreo"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@+id/space3">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/EmailCorreo"
+                        android:layout_width="match_parent"
+                        android:layout_height="21dp"
+                        android:text="@string/e_correo"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="18dp"
+                        android:inputType="textEmailAddress"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/editTextEmail"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/email_correo"
+                    android:textColorHint="#F0D595"
+                    android:textColor="#0fcfda"
+                    android:inputType="textEmailAddress"
+                    android:layout_width="fill_parent"
+                    android:layout_below="@id/lyEmailCorreo"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    />
+
+                <View
+                    android:id="@+id/space4"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="#00000000"
+                    android:layout_below="@+id/editTextEmail"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/lyocupacion"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@+id/space4">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/ocupacion"
+                        android:layout_width="match_parent"
+                        android:layout_height="21dp"
+                        android:text="@string/e_spinner"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/editTextWorking"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/ocupation_name"
+                    android:textColorHint="#F0D595"
+                    android:textColor="#0fcfda"
+                    android:inputType="textEmailAddress"
+                    android:layout_width="fill_parent"
+                    android:layout_below="@id/lyocupacion"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    />
+
+                <View
+                    android:id="@+id/space7"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="#FFFEF9"
+                    android:layout_below="@+id/editTextWorking" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/lyempresa"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@+id/space5">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/empresa"
+                        android:layout_width="match_parent"
+                        android:layout_height="21dp"
+                        android:text="@string/e_comment"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"/>
+
+                </LinearLayout>
+
+
+
+                <EditText
+                    android:id="@+id/editTextEnterprice"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/email_comment"
+                    android:textColorHint="#F0D595"
+                    android:textColor="#0fcfda"
+                    android:inputType="textMultiLine"
+                    android:lines="3"
+                    android:layout_width="fill_parent"
+                    android:layout_below="@id/lyempresa"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    />
+
+                <View
+                    android:id="@+id/space6"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="#FFFEF9"
+                    android:layout_below="@id/editTextEnterprice" />
+
+                <Button
+                    android:id="@+id/ButtonSendFeedback"
+                    android:layout_height="wrap_content"
+                    android:text="@string/email_send"
+                    android:textColor="#F0B331"
+                    android:textSize="20dp"
+                    android:shadowColor="#000000"
+                    android:shadowDx="1.5"
+                    android:shadowDy="1.3"
+                    android:shadowRadius="1.6"
+                    android:textStyle="bold"
+                    android:background="#F0D595"
+                    android:layout_width="fill_parent"
+                    android:layout_below="@id/space6"
+                    />
+
+            </LinearLayout>
+
+        </ScrollView>
+        <androidx.core.widget.ContentLoadingProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone">
+        </androidx.core.widget.ContentLoadingProgressBar>
+
+    </RelativeLayout>
+
+</LinearLayout>

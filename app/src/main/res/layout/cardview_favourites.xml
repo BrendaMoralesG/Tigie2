@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/cvFractions"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    android:background="#EDEDED" >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/cardview_default_elevation"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/star_filled_48"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:id="@+id/tvFractionFavourite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fracción: "
+                    android:layout_marginTop="5dp"
+                    style="@style/styleCode1"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:paddingLeft="15dp" />
+
+                <TextView
+                    android:id="@+id/tariffFractionCodeFavourite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    style="@style/styleCode"
+                    android:textSize="17dp"
+                    android:paddingLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginStart="19dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/tvFractionFavourite"
+                    android:layout_toEndOf="@+id/tvFractionFavourite" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/z_delete"
+                android:id="@+id/deleteFav"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:id="@+id/id_favourite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                style="@style/styleChapterDescr"
+                android:visibility="gone"
+                android:layout_marginLeft="43dp"
+                android:layout_marginStart="43dp"
+                android:layout_marginTop="20dp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/z_delete"
+                android:id="@+id/delete"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+
+            <TextView
+                android:id="@+id/tariffFractionFavouriteDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                style="@style/styleChapterDescr"
+                android:paddingLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

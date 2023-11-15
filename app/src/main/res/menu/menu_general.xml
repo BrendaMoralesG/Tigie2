@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/search_52"
+        android:title="Buscar"
+        android:paddingLeft="50dp"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView"
+        android:orderInCategory="5"
+        />
+
+    <item
+        android:id="@+id/mAbout"
+        android:title="@string/menu_about"
+        android:orderInCategory="001"
+        app:showAsAction="never"
+        ></item>
+
+    <item
+        android:id="@+id/mDerArco"
+        android:title="@string/menu_derechos_arco"
+        android:orderInCategory="001"
+        app:showAsAction="never"
+        ></item>
+
+    <item
+        android:id="@+id/mAvisoPrivacidad"
+        android:title="@string/menu_aviso_privacidad"
+        android:orderInCategory="001"
+        app:showAsAction="never"
+        ></item>
+
+    <item
+        android:id="@+id/mExit"
+        android:title="@string/menu_exit"
+        android:orderInCategory="010"
+        android:visible="true"
+        app:showAsAction="never"
+        ></item>
+
+</menu>

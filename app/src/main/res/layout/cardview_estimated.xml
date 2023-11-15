@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/cvChapters"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal"
+            android:background="@color/colorDiverColor">
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="@color/colorAzul2"
+            android:padding="25dip"
+            android:id="@+id/fill_parent74"
+            android:layout_below="@+id/relativeL3s"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/z_eua"
+                android:id="@+id/iconBorderRate"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvEstimatedPrice"
+                android:visibility="visible"
+                android:text="@string/estimatedPrice"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/colorVerde"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/iconBorderRate"
+                android:layout_toEndOf="@+id/iconBorderRate"
+                android:layout_marginStart="20dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/estimatedPrice"
+                android:visibility="visible"
+                android:text=""
+                style="@style/styleCode1"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/tvEstimatedPrice" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/z_nota"
+                android:id="@+id/iconBorderNote"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:id="@+id/tvEstimatedPriceNote"
+                android:visibility="visible"
+                android:text="@string/estimatedNote"
+                android:layout_alignLeft="@+id/textCompe"
+                android:layout_alignStart="@+id/textCompe"
+                android:layout_marginLeft="22dp"
+                android:textColor="@color/colorVerde"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/estimatedPriceNote"
+            android:visibility="visible"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:text=""
+            style="@style/styleCode1"
+            android:layout_below="@+id/tvEstimatedPriceNote" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:id="@+id/lyEstimatedPriceNico"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/z_next2"
+                android:id="@+id/iconBorderNico"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:id="@+id/tvEstimatedPriceNico"
+                android:visibility="visible"
+                android:text="@string/estimatedNico"
+                android:layout_alignLeft="@+id/textCompe"
+                android:layout_alignStart="@+id/textCompe"
+                android:layout_marginLeft="22dp"
+                android:textColor="@color/colorVerde"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:id="@+id/tvEstimatedPriceNicoDesc"
+                android:visibility="visible"
+                android:layout_alignLeft="@+id/textCompe"
+                android:layout_alignStart="@+id/textCompe"
+                android:layout_marginLeft="22dp"
+                android:text=""
+                style="@style/styleCode1"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="@color/colorAzul2"
+            android:padding="25dip"
+            android:id="@+id/fill_parent75"
+            android:layout_below="@+id/relativeL3s"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/z_dof3"
+                android:id="@+id/iconEstimatedDof"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:id="@+id/tvestimatedDof"
+                android:visibility="visible"
+                android:text="@string/estimatedDof"
+                android:layout_below="@+id/textCompe"
+                android:layout_marginLeft="23dp"
+                android:textColor="@color/colorVerde"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:id="@+id/estimatedPricePublicationDate"
+                android:visibility="visible"
+                android:text=""
+                android:textColor="@color/colorRed"
+                android:layout_below="@+id/textCompe"
+                android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/z_agremment2"
+                android:id="@+id/iconEstimatedAgreement"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvAnnexDof"
+                android:id="@+id/estimatedPriceAplicationDate"
+                android:text=""
+                style="@style/styleCode1"
+                android:layout_gravity="center_vertical|right"
+                android:gravity="left"
+                android:layout_marginLeft="24dp"
+                />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/z_effective"
+                android:id="@+id/iconEstimatedEffective"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/estimatedPriceAplicationDate"
+                android:id="@+id/estimatedPriceEffectiveDate"
+                android:text=""
+                android:layout_gravity="center_vertical|right"
+                android:gravity="left"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/colorVigencia"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/cvChapters"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/cardview_default_elevation"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="48dp"
+                android:src="@drawable/cap_01"
+                android:id="@+id/ivIcon"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvChapterDesc"
+                style="@style/styleChapterDescr"
+                android:textSize="@dimen/textoTablet"
+                android:text="@string/chapterDescr"
+                android:layout_gravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/tvChapter"
+                android:layout_toEndOf="@+id/tvChapter"
+                android:layout_marginLeft="19dp"
+                android:layout_marginStart="30dp"/>
+
+
+            <TextView
+                android:id="@+id/tvChapter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chapter"
+                style="@style/styleChapter"
+                android:textSize="@dimen/textoTablet"
+                android:textStyle="bold"
+                android:layout_marginLeft="28dp"
+                android:layout_marginStart="28dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/ivIcon"
+                android:layout_toEndOf="@+id/ivIcon" />
+
+            <TextView
+                android:id="@+id/tvId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/id_chapter"
+                style="@style/styleChapterDescr"
+                android:layout_toRightOf="@+id/ivIcon"
+                android:layout_toEndOf="@+id/tvChapterDesc"
+                android:visibility="invisible"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+

@@ -1,0 +1,176 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/vector2"
+    tools:context="com.example.sistemascasa.tigie.settings.LoginActivity">
+
+    <!-- Login progress -->
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rl"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E-TIGIE"
+            android:id="@+id/textView"
+            android:textSize="@dimen/tituloTablet"
+            android:textColor="@color/background_material_light"
+            android:textIsSelectable="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:layout_gravity="right"
+            android:background="@drawable/casa"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tarifa de la Ley de los Impuestos Generales de Importación y de Exportación "
+            android:id="@+id/textView2"
+            android:textSize="@dimen/textoTabletTitulos"
+            android:textColor="@color/design_snackbar_background_color"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/imageView"
+            android:layout_toStartOf="@+id/imageView" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            style="@android:style/DeviceDefault.ButtonBar">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="195dp"
+                android:layout_marginLeft="120dp"
+                android:layout_height="match_parent">
+
+                <AutoCompleteTextView
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_email"
+                    android:textSize="@dimen/textoTablet"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="60dp"
+
+                android:layout_height="wrap_content">
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp">
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_marginLeft="120dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_password"
+                    android:imeActionLabel="@string/action_sign_in_short"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:textSize="@dimen/textoTablet"
+                    android:singleLine="true"
+                    android:layout_centerVertical="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="150dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="250dp">
+
+
+                <Button
+                    android:id="@+id/sign_in"
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/action_sign_in"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/textoTablet"
+                    android:layout_marginTop="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="31dp"
+                    android:layout_marginEnd="31dp"
+                    android:layout_gravity="right" />
+
+                <Button
+                    android:id="@+id/send_email"
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/send_email"
+                    android:textSize="@dimen/textoTablet"
+                    android:textStyle="bold"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="34dp"
+                    android:layout_marginStart="34dp"
+                    android:layout_gravity="center_horizontal" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_marginTop="300dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="© 2009 Sistemas CASA, S.A. de C.V. Todos los Derechos Reservados
+Norte 7 No. 4710 Col. Defensores de la República, México D.F. CP. 07780
+Tel: 01 (55) 5368 6826 con 10 líneas / E-mail: ventas@sistemascasa.com.mx
+"
+        android:id="@+id/textView3"
+        android:textSize="@dimen/textoTabletDesc"
+        android:textColor="@color/bright_foreground_material_light" />
+</LinearLayout>

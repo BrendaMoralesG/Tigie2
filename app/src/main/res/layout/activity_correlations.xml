@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sistemascasa.tigie.activities.CorrelationsActivity"
+    >
+    <include android:id="@+id/miActionBar"
+        layout="@layout/actionbar">
+    </include>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCorrelations"
+        android:text="@string/correlations"
+        android:textStyle="bold"
+        style="@style/styleChapituloCode"
+        android:layout_below="@+id/miActionBar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:textSize="@dimen/text_chapters"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCorrelations"
+        android:layout_below="@+id/tvCorrelations"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sistemascasa.tigie.FragmentsActivity.ProsecActivity">
+
+    <include android:id="@+id/miActionBar2"
+        layout="@layout/actionbar">
+    </include>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvProsec"
+        android:text="@string/text_prosec"
+        style="@style/styleChapituloCode"
+        android:layout_marginTop="55dp"
+        android:paddingBottom="5dip"
+        android:paddingLeft="10dip"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_chapters"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvFraccionProsec"
+        android:text="Fracción : "
+        style="@style/styleCode"
+        android:layout_marginTop="85dp"
+        android:paddingBottom="5dip"
+        android:paddingLeft="10dip"
+        android:textSize="18dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvFraccionProsecCode"
+        android:text=""
+        style="@style/styleCode1"
+        android:layout_marginTop="85dp"
+        android:paddingBottom="5dip"
+        android:paddingLeft="110dip"
+        android:textSize="18dp"
+        />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="@color/colorAccent"
+        android:padding="10dip"
+        android:layout_below="@+id/tvFraccionCompensatory"
+        android:layout_marginTop="115dp"
+        android:id="@+id/fill_parent"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvProsec"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="125dp"
+        android:layout_below="@+id/fill_parent">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</FrameLayout>

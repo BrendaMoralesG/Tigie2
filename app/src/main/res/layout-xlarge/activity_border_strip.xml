@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sistemascasa.tigie.activities.BorderStripActivity">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include android:id="@+id/miActionBar2"
+            layout="@layout/actionbar">
+        </include>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvInformationBorder"
+            android:text="@string/text_border"
+            style="@style/styleChapituloCode"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="5dip"
+            android:paddingLeft="10dip"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_chapters"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvFraccionBorder"
+            android:text="Fracción : "
+            style="@style/styleCode"
+            android:paddingBottom="5dip"
+            android:paddingLeft="10dip"
+            android:textSize="18dp"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvFraccionBorderCode"
+            android:text=""
+            style="@style/styleCode1"
+            android:paddingBottom="5dip"
+            android:paddingLeft="110dip"
+            android:textSize="18dp"
+            />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="@color/colorAccent"
+            android:padding="25dip"
+            android:layout_below="@+id/tableLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/fill_parent2"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvBorder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/fill_parent2">
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+
+
+
+</FrameLayout>
+

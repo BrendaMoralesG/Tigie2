@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FragmentsActivity.InformationFraccionFragment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/scrollView"
+    android:background="@color/cardview_light_background"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvInformation"
+            android:text="@string/tvInformation"
+            style="@style/styleChapituloCode"
+            android:paddingBottom="5dip"
+            android:paddingLeft="10dip"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_chapters"
+            />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="@color/colorAccent"
+            android:padding="25dip"
+            android:layout_below="@+id/tableLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="28dp" />
+
+        <RelativeLayout
+            android:layout_marginTop="50dp"
+            android:id="@+id/relativePrincipal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/relativeL1s"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvFracChapter"
+                    android:text="@string/idCapitulo"
+                    android:gravity="right"
+                    android:layout_gravity="center_vertical|right"
+                    android:padding="3dip"
+                    android:textStyle="bold"
+                    style="@style/styleCode"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvFracChapter"
+                    android:id="@+id/fracChapter"
+                    android:text=""
+                    style="@style/styleCode2"
+                    android:layout_gravity="center_vertical|right"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fracChapterDesc"
+                    android:text=""
+                    android:gravity="left"
+                    style="@style/styleCode1"
+                    android:padding="3dip"
+                    android:layout_gravity="center_horizontal|top"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginRight="10dp"
+                    />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/relativeL2s"
+                android:layout_below="@+id/relativeL1s"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvFracHeading"
+                    android:text="@string/parti"
+                    android:gravity="right"
+                    android:layout_gravity="center_vertical|right"
+                    android:padding="3dip"
+                    android:textStyle="bold"
+                    style="@style/styleCode"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvFracHeading"
+                    android:layout_gravity="center_vertical|right"
+                    android:id="@+id/fracHeading"
+                    android:text=""
+                    style="@style/styleCode2"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fracHeadingDesc"
+                    android:text=""
+                    android:gravity="left"
+                    style="@style/styleCode1"
+                    android:padding="3dip"
+                    android:layout_gravity="center_horizontal|top"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginRight="10dp"/>
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/relativeL3s"
+                android:layout_below="@+id/relativeL2s"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvFracSubHeading"
+                    android:text="@string/subparti"
+                    android:gravity="right"
+                    android:layout_gravity="center_vertical|right"
+                    android:padding="3dip"
+                    android:textStyle="bold"
+                    style="@style/styleCode"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvFracSubHeading"
+                    android:id="@+id/fracSubHeading"
+                    android:text=""
+                    style="@style/styleCode2"
+                    android:layout_gravity="center_vertical|right"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fracSubHeadingDesc"
+                    android:text=""
+                    android:gravity="left"
+                    style="@style/styleCode1"
+                    android:padding="3dip"
+                    android:layout_gravity="center_horizontal|top"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginRight="10dp"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/relativeL4s"
+                android:layout_below="@+id/relativeL3s"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvFrac"
+                    android:text="@string/fracc"
+                    android:gravity="right"
+                    android:layout_gravity="left"
+                    android:padding="3dip"
+                    android:textStyle="bold"
+                    style="@style/styleCode"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvFrac"
+                    android:id="@+id/fracCode"
+                    android:text=""
+                    style="@style/styleCode2"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fracDesc"
+                    android:text=""
+                    android:gravity="left"
+                    style="@style/styleCode1"
+                    android:padding="3dip"
+                    android:layout_gravity="center_horizontal|top"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginRight="10dp"/>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/relativeCorr"
+                android:layout_below="@+id/relativeL4s"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvFracCorr"
+                    android:text="@string/correlacion"
+                    android:gravity="right"
+                    android:layout_gravity="left"
+                    android:padding="3dip"
+                    android:textStyle="bold"
+                    style="@style/styleCode"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvCorrelacionCodigo"
+                    android:text=""
+                    android:gravity="left"
+                    style="@style/styleCode1"
+                    android:padding="3dip"
+                    android:layout_gravity="center_horizontal|top"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginRight="10dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/relativeNico"
+                android:layout_below="@+id/relativeCorr"
+                android:layout_marginLeft="5dp"
+                android:visibility="gone"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvFracNico"
+                    android:text="@string/nico"
+                    android:gravity="right"
+                    android:layout_gravity="left"
+                    android:padding="3dip"
+                    android:textStyle="bold"
+                    style="@style/styleCode"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvNicoDesc"
+                    android:text=""
+                    android:gravity="left"
+                    style="@style/styleCode1"
+                    android:padding="3dip"
+                    android:layout_gravity="center_horizontal|top"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginRight="10dp"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:background="@color/colorAccent"
+                android:padding="25dip"
+                android:layout_below="@+id/relativeNico"
+                android:id="@+id/viewSeprCorrFrac"
+                android:visibility="gone"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewSeprCorrFrac"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rlCorrFracc"
+                    android:visibility="gone"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Correlaciones"
+                            style="@style/styleChapituloCode"
+                            android:paddingBottom="5dip"
+                            android:paddingLeft="10dip"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/text_chapters"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="10dip"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/styleCode"
+                                android:layout_marginLeft="5dp"
+                                android:text="Fracción TIGIE "/>
+
+                            <TextView
+                                android:id="@+id/tvTigieCorr"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/styleCode"
+                                android:layout_marginLeft="5dp"
+                                android:text=""/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:text="-"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                style="@style/styleCode"
+                                android:text="NICO"/>
+                        </LinearLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvCorrFracc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp">
+                        </androidx.recyclerview.widget.RecyclerView>
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dip"
+                    android:background="@color/colorAccent"
+                    android:padding="25dip"
+                    android:layout_below="@+id/viewSepr"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/fillInfFrac2"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fillInfFrac2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/relativeLayout5">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvImpImp"
+                        style="@style/styleCode2"
+                        android:text="Impuesto General de Importación: "/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvImpImpCode"
+                        android:text=""
+                        style="@style/styleCode1"
+                        android:layout_marginLeft="150dp" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relativeLayout5"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/relativeLayout6">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvImpExp"
+                        style="@style/styleCode2"
+                        android:text="Impuesto General de Exportación: "/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvImpExpCode"
+                        android:text=""
+                        style="@style/styleCode1"
+                        android:layout_marginLeft="150dp"  />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relativeLayout6"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/relativeLayout7">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvUnidad"
+                        android:layout_marginTop="10dp"
+                        style="@style/styleCode2"
+                        android:text="Unidad de Medida: "/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvUnidadCode"
+                        android:text=""
+                        style="@style/styleCode1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="150dp"  />
+
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvIva"
+                        android:layout_below="@+id/tvUnidad"
+                        android:layout_marginTop="10dp"
+                        style="@style/styleCode2"
+                        android:text="IVA :  "/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvIvaCode"
+                        android:layout_below="@+id/tvUnidadCode"
+                        android:text=""
+                        style="@style/styleCode1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="150dp"  />
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/iepsImpo"
+                        android:layout_below="@+id/tvIva"
+                        android:layout_marginTop="10dp"
+                        style="@style/styleCode2"
+                        android:text="IEPS Importación : "/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/iepsImpoCode1"
+                        android:layout_below="@+id/tvIvaCode"
+                        android:text=""
+                        style="@style/styleCode1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="150dp"  />
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/iepsExpo1"
+                        android:layout_below="@+id/iepsImpo"
+                        android:layout_marginTop="10dp"
+                        style="@style/styleCode2"
+                        android:text="IEPS Exportación : "/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/iepsExpoCode1"
+                        android:layout_below="@+id/iepsImpoCode1"
+                        android:layout_marginTop="10dp"
+                        android:text=""
+                        style="@style/styleCode1"
+                        android:layout_marginLeft="150dp"  />
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/isan1"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/iepsExpo1"
+                        style="@style/styleCode2"
+                        android:text="ISAN : "/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/isanCode1"
+                        android:layout_below="@+id/iepsExpoCode1"
+                        android:text=""
+                        android:layout_marginTop="10dp"
+                        style="@style/styleCode1"
+                        android:layout_marginLeft="150dp"  />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+</ScrollView>

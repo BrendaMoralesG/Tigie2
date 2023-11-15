@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.sistemascasa.tigie.ActivityArco">
+
+    <include android:id="@+id/miActionBar2"
+        layout="@layout/actionbar">
+    </include>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:src="@drawable/z_3d"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Derechos ARCO"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_gravity="center"
+                    android:textSize="18dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/arco_desc"
+                    android:textColor="@color/design_dark_default_color_on_error"
+                    android:textSize="16dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/arco_sol"
+                    android:textColor="@color/design_dark_default_color_on_error"
+                    android:textSize="16dp" />
+
+
+                <TextView
+                    android:id="@+id/tvAviso"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAzul2"
+                    android:onClick="onClickAvisoArco"
+                    android:text="@string/hyperlink"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/arco_solCa"
+                    android:textColor="@color/design_dark_default_color_on_error"
+                    android:textSize="16dp" />
+
+
+                <TextView
+                    android:id="@+id/tvCancelar"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/arco_can"
+                    android:onClick="onClickCancel"
+                    android:textColor="@color/colorAzul2"
+                    android:clickable="true"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+</RelativeLayout>

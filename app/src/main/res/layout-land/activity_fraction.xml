@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include android:id="@+id/miActionBar"
+        layout="@layout/actionbar">
+    </include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/miActionBar"
+        android:background="@color/colorDiverColor"
+        android:id="@+id/rlFracEncabezado">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/z_page"
+            android:id="@+id/ivIconFrac"
+            android:layout_alignTop="@+id/tvSubpartida"
+            android:layout_alignLeft="@+id/scrollView4"
+            android:layout_alignStart="@+id/scrollView4" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvSubpartida"
+            android:text="@string/tvSubpartida"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/ivIconFrac"
+            android:layout_toEndOf="@+id/ivIconFrac"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            style="@style/styleChapitulo"
+            android:textSize="18dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/idTariffSubheading"
+            android:text="@string/id_subpartida"
+            android:layout_below="@+id/tvSubpartida"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:visibility="invisible"
+            android:textSize="@dimen/text_chapters"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tariffSubheadingCode"
+            android:text=""
+            android:textSize="18dp"
+            android:textStyle="bold"
+            style="@style/styleChapituloCode"
+            android:layout_alignBaseline="@+id/tvSubpartida"
+            android:layout_alignBottom="@+id/tvSubpartida"
+            android:layout_alignLeft="@+id/tvSubpartida"
+            android:layout_alignStart="@+id/tvSubpartida"
+            android:layout_marginLeft="117dp"
+            android:layout_marginStart="117dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvSubpartida"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/scrollView4">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tariffSubheadingDescription"
+                android:text="@string/subpartidaDesc"
+                style="@style/styleChapterDescr"
+                android:layout_marginRight="12dp"
+                android:layout_alignLeft="@+id/tvSubpartida"
+                android:layout_alignStart="@+id/tvSubpartida" />
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvFracciones"
+        android:text="@string/fracciones"
+        android:textStyle="bold"
+        style="@style/styleChapituloCode"
+        android:layout_below="@+id/rlFracEncabezado"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:textSize="18dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvFractions"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvFracciones"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_right"
+        android:paddingTop="5dp">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cvChapters"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="5dp"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout"
+            android:background="@color/colorDiverColor"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:gravity="left"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/colorPrimaryDark4"
+                android:id="@+id/importPermitTitle"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="@color/colorAzul2"
+            android:padding="25dip"
+            android:id="@+id/fill_parentAla1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout2"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/z_annex"
+                android:id="@+id/iconAnnex"
+                android:layout_gravity="center"
+                android:layout_marginLeft="4dp"
+                android:layout_marginStart="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvImportPermitDescription"
+                android:text="Anexo : "
+                android:layout_gravity="center"
+                android:layout_marginLeft="25dp"
+                android:textColor="@color/colorVerde"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/importPermitDescription"
+            android:text=""
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            style="@style/styleCode1"
+            android:layout_gravity="center_vertical"
+            android:gravity="left"
+            android:layout_marginLeft="20dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout3"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:weightSum="1">
+
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/z_nota"
+                android:id="@+id/iconImportNote"
+                android:layout_gravity="center"
+                android:layout_marginLeft="6dp"
+                android:layout_marginStart="6dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvImportPermitNote"
+                android:text="Nota : "
+                android:layout_gravity="center"
+                android:layout_marginLeft="25dp"
+                android:textColor="@color/colorVerde"
+                />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/importPermitNote"
+            android:text=""
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            style="@style/styleCode1"
+            android:layout_gravity="center_vertical"
+            android:gravity="left"
+            android:paddingLeft="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout74"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:src="@drawable/z_general"
+                android:id="@+id/iconImportArcticle"
+                android:layout_gravity="center"
+                android:layout_marginLeft="4dp"
+                android:layout_marginStart="4dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Artículo :"
+                android:layout_gravity="center"
+                android:layout_marginLeft="25dp"
+                android:textColor="@color/colorVerde"
+                android:id="@+id/tvArticleImp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/arcticleDesc"
+                android:text=""
+                android:textColor="@color/colorRed"
+                android:layout_gravity="center_vertical|right"
+                android:gravity="left"
+                android:paddingLeft="20dp"
+                android:layout_marginRight="10dp"
+                />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="@color/colorAzul2"
+            android:padding="25dip"
+            android:id="@+id/fill_parent3"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeL3s"
+            android:layout_below="@+id/relativeL4s"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/z_dof3"
+                android:id="@+id/iconImportDof"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvAnnexDof"
+                android:text="DOF :"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/iconAnnexDof"
+                android:layout_toEndOf="@+id/iconAnnexDof"
+                android:padding="3dip"
+                android:textColor="@color/colorVerde"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/importPermitPublicationDate"
+                android:text=""
+                android:textColor="@color/colorRed"
+                android:layout_gravity="center_vertical|right"
+                android:gravity="left"
+                android:paddingLeft="15dp"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeL4s"
+            android:layout_below="@+id/relativeL48"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/z_agremment2"
+                android:id="@+id/iconImportApplication"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvAnnexDof"
+                android:id="@+id/importPermitAplicationDate"
+                android:text=""
+                style="@style/styleCode1"
+                android:layout_gravity="center_vertical|right"
+                android:gravity="left"
+                android:layout_marginLeft="24dp"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeL5s"
+            android:layout_below="@+id/relativeL3s"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            >
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/z_effective"
+                android:id="@+id/iconImportEffective"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvAnnexDof"
+                android:id="@+id/importPermitEffectiveDate"
+                android:text=""
+                style="@style/styleCode1"
+                android:layout_gravity="center_vertical|right"
+                android:gravity="left"
+                android:layout_marginLeft="22dp"
+                android:textColor="@color/colorVigencia"
+                />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

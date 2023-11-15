@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/cvChapters"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/colorDiverColor">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:src="@drawable/z_geo"
+                android:id="@+id/iconAladiCountryr"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:id="@+id/tvAladiPaisCode"
+                android:text="PRUEBA"
+                android:textSize="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="18dp"
+                android:textColor="@color/colorPrimaryDark4"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:id="@+id/imageViewAladi"
+            android:src="@drawable/z_mundo2"
+            android:layout_gravity="center_horizontal"/>
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="@color/colorAzul2"
+            android:padding="25dip"
+            android:id="@+id/fill_parentAla1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:src="@drawable/z_rate"
+                    android:id="@+id/iconAladiRate"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvAladiAdvalorem"
+                    android:text="Preferencia (%) :"
+                    android:textColor="@color/colorVerde"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="15dp"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvAladiAdvaloremCode"
+                    android:textColor="@color/colorPrimaryDark4"
+                    android:text=""
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="15dp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="@color/colorAzul2"
+            android:padding="25dip"
+            android:id="@+id/fill_parentAla2"
+            android:layout_below="@+id/noteAnnex"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ly1Aladi"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:src="@drawable/z_nota"
+                    android:id="@+id/iconAladiNote"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvAladiPaissCsode5"
+                    android:text="Nota : "
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/colorVerde"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ly1Aladi"
+                android:id="@+id/notaAladi"
+                android:text=""
+                android:textColor="@color/colorPrimaryDark4"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="15dp"/>
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="@color/colorAzul2"
+            android:padding="25dip"
+            android:id="@+id/fill_parentAla3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ly1Aeladi"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:src="@drawable/z_dof3"
+                    android:id="@+id/iconAadiDof"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvAladiDof"
+                    android:text="DOF :"
+                    android:textColor="@color/colorVerde"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvAladiDofCode"
+                    android:text=""
+                    android:textColor="@color/colorPrimaryDark4"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

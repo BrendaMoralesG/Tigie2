@@ -1,0 +1,233 @@
+<resources>
+    <string name="app_name">Tarifa General</string>
+    <string name="capitulos">Capítulos</string>
+    <string name="search">Buscar</string>
+    <string name="id_chapter">1</string>
+    <string name="chapter">00</string>
+    <string name="chapterDescr">Sin descripción.</string>
+    <string name="correlacion">Correlaciones</string>
+    <string name="nico">Nicos</string>
+
+    <string name="idTariffChapter">idTariffChapter</string>
+    <string name="tariffChapterCode">tariffChapterCode</string>
+    <string name="tariffChapterDescription">tariffChapterDescription</string>
+    <string name="iconChapter">iconChapter</string>
+    <string name="idCapitulo">Capítulo :</string>
+    <string name="partida">Partidas :</string>
+    <string name="parti">Partida :</string>
+    <string name="subparti">Subpartida :</string>
+    <string name="fracc">Fracción :</string>
+
+    <string name="idSubheading">Partida : </string>
+    <string name="subheading">1234</string>
+    <string name="id_heading">2</string>
+    <string name="subheadingDescr">Sin descripción.</string>
+
+    <string name="subheadings">Subpartidas :</string>
+    <string name="idTariffHeading">idTariffHeading</string>
+    <string name="tariffHeadingCode">tariffHeadingCode</string>
+    <string name="tariffHeadingDescription">tariffHeadingDescription</string>
+
+
+    <string name="tvSubpartida">Subpartida :  </string>
+    <string name="subpartida">123456</string>
+    <string name="id_subpartida">2</string>
+    <string name="subpartidaDesc">Sin descripción.</string>
+
+    <string name="idTariffSubheading">idTariffSubheading</string>
+    <string name="tariffSubheadingCode">tariffSubheadingCode</string>
+    <string name="tariffSubheadingDescription">tariffSubheadingDescription</string>
+    <string name="fracciones">Fracciones</string>
+
+    <string name="tvInformation">Información General </string>
+
+
+    <!-- Inicio menú-->
+    <string name="menu_about">Acerca de...</string>
+    <string name="menu_email">Enviar comentarios</string>
+    <string name="menu_exit">Cerrar sesión</string>
+    <string name="menu_derechos_arco">Derechos ARCO</string>
+    <string name="menu_aviso_privacidad">Aviso de privacidad</string>
+    <string name="menu_chapters">Ir a capítulos</string>
+    <string name="menu_headings">Ir a partidas</string>
+    <string name="menu_subheadings">Ir a subpartidas</string>
+
+    <string name="texto_about"><b><i>Esta aplicación ha sido desarrollada en Android por Sistemas Casa S.A. de C.V.</i></b>></string>
+
+    <string name="texto_about2"><b><i>E-TIGIE es una solución completa e integrada para la consulta de la Tarifa de Impuesto General de Importación y Exportación, diseñada para satisfacer todas las necesidades exigentes de calidad.</i></b></string>
+    <string name="texto_email">Para suscribirse a la Tarifa de Impuesto General de Importación y Exportación deberá llenar el formulario siguiente:</string>
+    <string name="fav_text">Favoritos</string>
+    <!-- Fin menú-->
+
+    <!-- Inicio Email-->
+    <!--Other string resources also defined in this file… -->
+    <string name="email_name">Ingrese su nombre...</string>
+    <string name="email_correo">Ingrese su correo...</string>
+    <string name="ocupation_name">Ingrese su ocupación...</string>
+    <string name="e_name">Nombre:</string>
+    <string name="e_correo">Correo:</string>
+    <string name="e_spinner">Ocupación:</string>
+    <string name="e_comment">Empresa:</string>
+
+    <string name="feedbacktype">AuxiliarText</string>
+    <string name="feedbacktype1">Error</string>
+    <string name="feedbacktype2">Queja</string>
+    <string name="feedbacktype3">Sugerencia</string>
+    <string name="feedbacktype4">Elogio</string>
+
+
+    <!-- Inicio Fin Email-->
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+    <string name="email_comment">Ingrese Nombre y Dirección de la Empresa...</string>
+    <string name="email_response">¿Le gustaría recibir un correo de respuesta?</string>
+    <string name="email_send">Enviar Correo</string>
+    <string name="mSearch">Buscar</string>
+    <string name="mFavourite">Marcar como favorito</string>
+
+    <string name="idText">idText</string>
+    <string name="codeText">codeText</string>
+    <string name="descripText">descripText</string>
+    <string name="idInt">idInt</string>
+    <string name="activity">activity</string>
+
+    <string name="chapters">chapters</string>
+    <string name="headings">headings</string>
+    <string name="subheadingsAct">subheadingsAct</string>
+    <string name="fractionsAct">fractionsAct</string>
+
+    <!-- Inicio Fin Email-->
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--Inicio favoritos-->
+    <string name="fav_name">SharedPreferencesFavorites</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="favorites">Favorites</string>
+
+    <string name="add_favr">Added to Favorites</string>
+    <string name="remove_favr">Removed from Favorites</string>
+    <string name="no_favorites_items">No Favorites</string>
+    <string name="no_favorites_msg">Long press on item to add to favorites.</string>
+    <string name="favorites_remove_msg">Long press on item to remove from favorites.</string>
+
+    <string name="tranfacipic">Tratado Integral y Progresista de Asociación Transpacífico</string>
+    <string name="tlc">Tratados de Libre Comercio</string>
+    <string name="aladi">Aladi Preferencia</string>
+    <string name="alliance">Alianza del Pacífico</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Contraseña</string>
+    <string name="action_sign_in">Iniciar Sesión</string>
+    <string name="send_email">Registrarse</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+
+    <!-- Strings related to CompensatoryShares -->
+    <string name="text_compenatory">Cuotas Compensatorias</string>
+
+    <!-- Strings related to Prosec -->
+    <string name="text_prosec">Preferencias Arancelarias PROSEC</string>
+    <string name="prosecIndustry">Industria : </string>
+    <string name="prosecRate">Tasa :</string>
+    <string name="prosecNote">Nota :</string>
+    <string name="prosecDof">DOF :</string>
+
+    <!-- Strings related to Annex -->
+    <string name="text_Annex">Anexos</string>
+    <string name="annex">Annexo : </string>
+    <string name="titleAnnex">Padrón sectorial de Importadores</string>
+    <string name="noteAnnex">Nota :</string>
+    <string name="dofAnnex">DOF :</string>
+
+    <!-- Strings related to Border -->
+    <string name="text_border">Franja Fronteriza</string>
+    <string name="borderRate">Tasa %: </string>
+    <string name="borderNote">Nota :</string>
+    <string name="borderDof">DOF :</string>
+
+
+    <!-- Strings related to Estimated -->
+    <string name="text_estimated">Precios Estimados</string>
+    <string name="estimatedPrice">Precio (USD) : </string>
+    <string name="estimatedNote">Nota :</string>
+    <string name="estimatedNico">Nico :</string>
+    <string name="estimatedDof">DOF :</string>
+
+    <!-- Strings related to Notes TLC -->
+    <string name="text_tlcNote">Notas de Tratados de Libre Comercio y Alianza del Pacífico</string>
+
+    <!-- Strings related to Import Permit -->
+    <string name="text_importpermit">NOMS, restricciones y regulaciones no arancelarias</string>
+
+    <!-- Strings related to Other Taxes -->
+    <string name="text_otherTaxes">Acotaciones del Impuesto</string>
+    <string name="que_es">E-TIGIE es una aplicación diseñada para realizar consultas sobre la Tarifa de la Ley de los Impuestos Generales de Importación y de Exportación (TIGIE).</string>
+
+    <string name="que_es1">¡Olvídate de aplicaciones completamente en HTML y que te obliguen a usar versiones horizontales!. E-TIGIE te ofrece una interfaz totalmente renovada para los usuarios con dispositivos Android, donde se podrán realizar consultas a través de un entorno sencillo de manejar.</string>
+    <string name="alcanceMano">Consulta la información de todas las fracciones desde tu dispositivo móvil, sin tener la necesidad de abrir un navegador, estés donde estés.</string>
+    <string name="rapidez">Siempre podrás consultar la información de la Tarifa de manera rápida y eficaz.</string>
+    <string name="seguridad">La aplicación fue desarrollada con los últimos elementos liberados por Android, por lo que ofrece una experiencia más amigable para el usuario.</string>
+    <string name="moderna">Ten siempre la seguridad, de que los datos mostrados son desplegados en tiempo real.</string>
+    <string name="novedades">No olvides que Sistemas CASA S.A. de C.V. busca ofrecerte la mayor experiencia de usuario. Por lo que nos esforzamos para crear cada vez mejores soluciones, que estén al alcance de todos. Siempre nos encontramos en constante renovación, por lo que te recomendamos mantener activas tus actualizaciones.</string>
+    <string name="correocasa">smcamacho@sistemascasa.com.mx</string>
+    <string name="consultar1">Consultas generales: Realizar cualquier tipo de consulta sobre la información que brinda la TIGIE</string>
+    <string name="consultar2">Buscador: Encuentra de manera fácil y rápida la información de los capítulos, partidas, subpartidas o fracciones que desees consultar. Se cuenta con la opción de realizar búsquedas específicas, ya sea indicando el número del capítulo, partida, subpartida o fracción. ¡Incluyendo búsquedas por palabra!</string>
+    <string name="consultar3">- Favoritos: Cuenta con una sección de favoritos. Donde podrás marcar tus fracciones favoritas, almacenarlas y consultarlas en cualquier momento.</string>
+    <string name="texto_version">2.0.0</string>
+    <string name="texto_desarrollado"><b><i>Esta aplicación ha sido desarrollada en Sistema Operativo Android.</i></b></string>
+    <string name="version">Versión : 2.0.0 - Profesional</string>
+    <string name="empresa"><b><i>Es una aplicación desarrollada por:</i></b>></string>
+    <string name="nombre_empresa"><b><i>Sistemas CASA, S.A. de C.V.</i></b></string>
+    <string name="title_activity_chapter">ChapterActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <!-- mainTIGIE -->
+    <string name="tigies">Tarifa de Impuestos Generales de Importación y Exportación</string>
+
+    <!-- correlations -->
+    <string name="correlations">Correlaciones</string>
+    <string name="title_activity_aviso_de_privacidad">AvisoDePrivacidadActivity</string>
+    <string name="cerrar_sesion">¿Desea cerrar sesión?</string>
+    <string name="button_ok">SI</string>
+    <string name="button_cancel">NO</string>
+    <string name="depurar">Operación exitosa</string>
+
+    <string name="hyperlink"><a href="https://e-casa.com.mx/avisos/AVISO_DE_PRIVACIDAD_E-TIGIE_M%C3%93VIL.html">Aviso de privacidad </a></string>
+
+
+    <string name="arco_desc">Si usted desea ejercer alguno de los derechos de acceso, rectificación, cancelación u oposición de datos personales, conocidos
+    como derechos ARCO. A continuación le explicamos el procedimiento a seguir para la presentación y atención de una solicitud</string>
+
+    <string name="arco_sol"> A) Requisitos para la presentación de una solicitud de ejercicio de derechos de acceso, rectificación u oposición.
+\n \n 1. Presentar la solicitud ante el responsable que posee los datos personales, a través de los medios y mecanismos señalados
+en el aviso de privacidad:</string>
+
+
+    <string name="arco_solCa"> B) Requisitos para la presentación de una solicitud de ejercicio de derechos de cancelación.
+\n \n 1. Realizar el procedimiento, a través de los medios y mecanismos señalados en el siguiente link :</string>
+
+    <string name="arco_can"><u>Cancelación de información</u> </string>
+    <string name="title_activity_arco">ActivityArco</string>
+
+</resources>

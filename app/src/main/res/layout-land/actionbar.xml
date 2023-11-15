@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="?attr/colorPrimary"
+    app:layout_scrollFlags="scroll|enterAlways"
+
+    tools:context=".activities.MainActivity"
+    >
+
+    <ImageView
+        android:id="@+id/toolbar_image"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/z_logo_sistemascasa"
+        android:textColor="@android:color/white"
+        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+        />
+
+
+    <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="E - TIGIE"
+        android:textColor="@android:color/white"
+        android:textSize="22dp"
+        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+        android:gravity="center_horizontal"
+        />
+
+</androidx.appcompat.widget.Toolbar>

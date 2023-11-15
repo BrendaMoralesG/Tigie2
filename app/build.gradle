@@ -1,0 +1,61 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        debug {
+            keyAlias 'E-TIGIEKey'
+            keyPassword 'developmentall'
+            storeFile file('/var/www/html/androidkey.jks')
+            storePassword 'developmentall'
+        }
+    }
+    compileSdkVersion 33
+    defaultConfig {
+        applicationId 'com.sistemascasa.etigiev1'
+        minSdkVersion 26
+        targetSdkVersion 33
+        versionCode 20
+        versionName "20.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro', 'proguard-android-optimize.txt'
+        }
+    }
+    productFlavors {
+    }
+    aaptOptions {
+        useNewCruncher false
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    def version = "1.0.0"
+    def multidex_version = "2.0.1"
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    implementation files('libs/ksoap2-android-assembly-2.4-jar-with-dependencies.jar')
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'com.google.code.gson:gson:2.6.2'
+    implementation 'com.squareup.retrofit2:retrofit:2.1.0'
+    implementation "androidx.multidex:multidex:$multidex_version"
+    implementation "androidx.cardview:cardview:$version"
+    implementation "androidx.recyclerview:recyclerview-selection:$version"
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:multidex:1.0.1'
+    implementation 'com.squareup.retrofit:retrofit:1.9.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    implementation 'com.squareup.okhttp:okhttp:2.4.0'
+    implementation 'org.jsoup:jsoup:1.9.2'
+    implementation 'com.squareup.okhttp:okhttp:2.7.5'
+    implementation 'com.squareup.okhttp3:okhttp:3.0.0'
+    implementation 'javax.xml.bind:jaxb-api:2.3.1'
+    implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
+}

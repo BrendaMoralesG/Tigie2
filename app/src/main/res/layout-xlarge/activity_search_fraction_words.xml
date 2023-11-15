@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sistemascasa.tigie.SearchFractionWords">
+
+    <include android:id="@+id/miActionBar"
+        layout="@layout/actionbar">
+    </include>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvFracciones"
+        android:text="@string/fracciones"
+        android:textStyle="bold"
+        style="@style/styleChapituloCode"
+        android:layout_below="@+id/miActionBar"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:textSize="@dimen/tittle_chapters_Tablet"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvFractions"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvFracciones"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_right"
+        android:paddingTop="@dimen/padding_top">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>
+

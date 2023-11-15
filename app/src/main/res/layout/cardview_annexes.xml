@@ -1,0 +1,300 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cvChapters"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1.08">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout"
+            android:background="@color/colorDiverColor"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="@string/titleAnnex"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/colorPrimaryDark4"
+                android:id="@+id/titleAnnex"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="@color/colorAzul2"
+            android:padding="25dip"
+            android:id="@+id/fill_parent"
+            android:layout_below="@+id/linearLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/fill_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/relativeL1s"
+                android:layout_marginLeft="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/relativeL6s"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp">
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/z_annex"
+                        android:id="@+id/iconAnnex"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginStart="4dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvAnnex"
+                        android:text="@string/annex"
+                        android:gravity="right"
+                        android:padding="3dip"
+                        android:textColor="@color/colorVerde"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/iconAnnex"
+                        android:layout_toEndOf="@+id/iconAnnex"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginStart="24dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relativeL6s"
+                    android:id="@+id/annex"
+                    android:text=""
+                    android:layout_marginTop="5dp"
+                    style="@style/styleCode1"
+                    android:layout_gravity="center_vertical|right"
+                    android:gravity="left"
+                    android:paddingLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/relativeL2s"
+                android:layout_below="@+id/relativeL1s"
+                android:layout_centerHorizontal="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/relativeL7s"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp">
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/z_nota"
+                        android:id="@+id/iconAnnexNote"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvAnnexNote"
+                        android:text="@string/noteAnnex"
+                        android:gravity="right"
+                        android:layout_gravity="center_vertical|right"
+                        android:padding="3dip"
+                        android:textColor="@color/colorVerde"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/iconAnnexNote"
+                        android:layout_toEndOf="@+id/iconAnnexNote" />
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relativeL7s"
+                    android:id="@+id/noteAnnex"
+                    android:text=""
+                    style="@style/styleCode1"
+                    android:layout_gravity="center_vertical|right"
+                    android:gravity="left"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dip"
+                    android:background="@color/colorAzul2"
+                    android:padding="25dip"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/fill_parent3"
+                    android:layout_below="@+id/noteAnnex"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/relativeL3s"
+                android:layout_below="@+id/relativeL4s"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/z_dof3"
+                    android:id="@+id/iconAnnexDof"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvAnnexDof"
+                    android:text="DOF :"
+                    android:layout_marginLeft="21dp"
+                    android:layout_marginStart="21dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/iconAnnexDof"
+                    android:layout_toEndOf="@+id/iconAnnexDof"
+                    android:padding="3dip"
+                    android:textColor="@color/colorVerde"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvAnnexDof"
+                    android:id="@+id/dofAnnex"
+                    android:text=""
+                    android:textColor="@color/colorRed"
+                    android:layout_gravity="center_vertical|right"
+                    android:gravity="left"
+                    android:paddingLeft="15dp"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/relativeL4s"
+                android:layout_below="@+id/relativeL2s"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/z_agremment2"
+                    android:id="@+id/iconAnnexAgreement"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvAnnexDof"
+                    android:id="@+id/applicationAnnex"
+                    android:text=""
+                    style="@style/styleCode1"
+                    android:layout_gravity="center_vertical|right"
+                    android:gravity="left"
+                    android:layout_marginLeft="24dp"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/relativeL5s"
+                android:layout_below="@+id/relativeL3s"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                >
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/z_effective"
+                    android:id="@+id/iconAnnexEffective"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvAnnexDof"
+                    android:id="@+id/effectivenAnnex"
+                    android:text=""
+                    style="@style/styleCode1"
+                    android:layout_gravity="center_vertical|right"
+                    android:gravity="left"
+                    android:layout_marginLeft="21dp"
+                    android:textColor="@color/colorVigencia"
+                    />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

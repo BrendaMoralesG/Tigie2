@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include android:id="@+id/miActionBar"
+        layout="@layout/actionbar">
+    </include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/miActionBar"
+        android:background="@color/colorDiverColor"
+        android:id="@+id/rlSubEncabezado"
+        >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/cap_01"
+            android:id="@+id/ivIconChapSubHead"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvSubheading"
+            android:text="@string/idSubheading"
+            style="@style/styleChapitulo"
+            android:textSize="@dimen/textoTabletTitulos"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/idTariffheading"
+            android:text="@string/id_heading"
+            android:visibility="invisible"
+            android:textSize="@dimen/text_chapters"
+            android:layout_alignBaseline="@+id/tvSubheading"
+            android:layout_alignBottom="@+id/tvSubheading"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tariffSubheadingCode"
+            android:text=""
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/textoTabletTitulos"
+            android:textStyle="bold"
+            style="@style/styleChapituloCode"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/tvSubheading"
+            android:layout_alignStart="@+id/tvSubheading"
+            android:layout_marginLeft="184dp"
+            android:layout_marginStart="114dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:id="@+id/scrollView2"
+            android:layout_marginTop="12dp"
+            android:layout_below="@+id/idTariffheading"
+            android:layout_alignLeft="@+id/tvSubheading"
+            android:layout_alignStart="@+id/tvSubheading">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tariffSuheadingDescription"
+                android:text="@string/subheadingDescr"
+                android:textSize="@dimen/textoTablet"
+                style="@style/styleChapterDescr"
+                android:layout_marginRight="10dp"
+                android:layout_alignTop="@+id/scrollView2"
+                android:layout_alignLeft="@+id/tvSubheading"
+                android:layout_alignStart="@+id/tvSubheading"
+                android:layout_marginBottom="20dp"
+                />
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvSubheadings"
+        android:text="@string/subheadings"
+        android:textStyle="bold"
+        android:textSize="@dimen/subtituloTablet"
+        style="@style/styleChapituloCode"
+        android:layout_below="@+id/rlSubEncabezado"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:layout_marginTop="@dimen/text_chapters_act"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSubheadings"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvSubheadings"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_right"
+        android:layout_marginTop="@dimen/text_chapters_act">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>

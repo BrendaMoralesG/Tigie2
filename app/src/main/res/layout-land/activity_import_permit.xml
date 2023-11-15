@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sistemascasa.tigie.FragmentsActivity.ImportPermitActivity">
+
+    <include android:id="@+id/miActionBar2"
+        layout="@layout/actionbar">
+    </include>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvInformation"
+        android:text="@string/text_importpermit"
+        style="@style/styleChapituloCode"
+        android:layout_marginTop="45dp"
+        android:paddingBottom="5dip"
+        android:paddingLeft="20dip"
+        android:textStyle="bold"
+        android:textSize="18dp"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvFraccionTlc"
+        android:text="Fracción : "
+        style="@style/styleCode"
+        android:layout_marginTop="73dp"
+        android:paddingBottom="5dip"
+        android:paddingLeft="20dip"
+        android:textSize="15dp"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvFraccionImportCode"
+        android:text=""
+        style="@style/styleCode1"
+        android:layout_marginTop="73dp"
+        android:paddingBottom="5dip"
+        android:paddingLeft="110dip"
+        android:textSize="15dp"
+        />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="@color/colorAccent"
+        android:padding="25dip"
+        android:layout_below="@+id/tvFraccionTlc"
+        android:layout_marginTop="100dp"
+        android:id="@+id/fill_parent"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvImportPermit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="105dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/fill_parent">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</FrameLayout>

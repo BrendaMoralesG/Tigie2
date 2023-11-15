@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/cvFractions"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/cardview_default_elevation"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                android:id="@+id/linearLayout4">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/z_page"
+                    android:id="@+id/tariffFractionIcon"
+                    android:layout_gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tvtariffFractionCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00000000"
+                    style="@style/styleChapter"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/tariffFractionDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chapterDescr"
+                style="@style/styleChapterDescr"
+                android:paddingLeft="5dp"
+                android:layout_gravity="center_vertical|right"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/linearLayout4"
+                android:layout_toEndOf="@+id/linearLayout4"
+                android:layout_marginLeft="12dp"
+                android:layout_marginStart="12dp" />
+
+
+
+            <TextView
+                android:id="@+id/idTariffFraction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/id_chapter"
+                style="@style/styleChapterDescr"
+                android:visibility="invisible"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tariffFractionDescription"
+                android:layout_toEndOf="@+id/tariffFractionDescription" />
+
+
+            <TextView
+                android:id="@+id/idTariffSubheadingFrac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10"
+                android:visibility="invisible"
+                android:layout_alignBaseline="@+id/tariffFractionDescription"
+                android:layout_alignBottom="@+id/tariffFractionDescription"
+                android:layout_toRightOf="@+id/idTariffFraction"
+                android:layout_toEndOf="@+id/idTariffFraction" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include android:id="@+id/miActionBar2"
+        layout="@layout/actionbar">
+    </include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/miActionBar"
+        android:id="@+id/rlFracEncabezado">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvCompensatory"
+            android:text="@string/text_compenatory"
+            style="@style/styleChapituloCode"
+            android:paddingBottom="5dip"
+            android:paddingLeft="10dip"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_marginTop="45dp"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvFraccionCompensatory"
+            android:text="Fracción : "
+            style="@style/styleCode"
+            android:layout_marginTop="70dp"
+            android:paddingBottom="5dip"
+            android:paddingLeft="10dip"
+            android:textSize="15dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvFraccionCompensatoryCode"
+            android:text="1212"
+            style="@style/styleCode1"
+            android:layout_marginTop="70dp"
+            android:paddingBottom="5dip"
+            android:paddingLeft="110dip"
+            android:textSize="15dp"
+            />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="@color/colorAccent"
+            android:padding="25dip"
+            android:layout_below="@+id/tvFraccionCompensatory"
+            android:id="@+id/fill_parent"
+            />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="5dp"
+            android:id="@+id/rvCompensatory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/fill_parent">
+        </androidx.recyclerview.widget.RecyclerView>
+    </RelativeLayout>
+
+
+
+
+</FrameLayout>

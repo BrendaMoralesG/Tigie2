@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/cvChapters"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="15dp"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal"
+            android:background="@color/colorDiverColor">
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="@color/colorAzul2"
+            android:padding="25dip"
+            android:id="@+id/fill_parent3"
+            android:layout_below="@+id/relativeL3s"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/z_industry"
+                android:id="@+id/iconAnnex"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/prosecIndustry"
+                android:text="@string/prosecIndustry"
+                android:gravity="right"
+                android:padding="3dip"
+                android:textColor="@color/colorVerde"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/iconAnnex"
+                android:layout_toEndOf="@+id/iconAnnex"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeL6s"
+                android:id="@+id/prosecDescriptionName"
+                android:text=""
+                style="@style/styleCode1"
+                android:layout_gravity="center_vertical|right"
+                android:gravity="left"
+                android:paddingLeft="15dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/z_rate"
+                android:id="@+id/iconpro"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvFracHeading"
+                android:text="@string/prosecRate"
+                android:gravity="right"
+                android:padding="3dip"
+                android:textColor="@color/colorVerde"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/iconAnnex"
+                android:layout_toEndOf="@+id/iconAnnex"
+                android:layout_marginLeft="23dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeL7s"
+                android:layout_gravity="center_vertical|right"
+                android:id="@+id/prosecPreferenceAdualRate"
+                android:text=""
+                style="@style/styleCode1"
+                android:gravity="left"
+                android:paddingLeft="40dp"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/z_nota"
+                android:id="@+id/iconAnnexNote"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvAnnexNote"
+                android:text="@string/prosecNote"
+                android:gravity="right"
+                android:layout_gravity="center_vertical|right"
+                android:padding="3dip"
+                android:textColor="@color/colorVerde"
+                android:layout_marginLeft="25dp"
+                android:layout_marginStart="24dp"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/iconAnnexNote"
+                android:layout_toEndOf="@+id/iconAnnexNote" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeL8s"
+            android:id="@+id/prosecNoteDescription"
+            android:text=""
+            style="@style/styleCode1"
+            android:layout_gravity="center_vertical|left"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="@color/colorAzul2"
+            android:padding="25dip"
+            android:id="@+id/fill_parent4"
+            android:layout_below="@+id/relativeL3s"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/z_dof3"
+                android:id="@+id/iconAnnexDof"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvProsecDof"
+                android:text="DOF :"
+                android:layout_marginLeft="25dp"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/iconAnnexDof"
+                android:layout_toEndOf="@+id/iconAnnexDof"
+                android:padding="3dip"
+                android:textColor="@color/colorVerde"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvAnnexDof"
+                android:id="@+id/prosecPreferenceAgreementDate"
+                android:text=""
+                android:textColor="@color/colorRed"
+                android:layout_gravity="center_vertical|right"
+                android:gravity="left"
+                android:paddingLeft="45dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

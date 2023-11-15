@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/mHeadings"
+        android:title="@string/menu_headings"
+        android:orderInCategory="004"
+        app:showAsAction="never"
+        ></item>
+</menu>

@@ -1,0 +1,66 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentsActivity.AladiFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvInformationAladi"
+        android:text="@string/aladi"
+        style="@style/styleChapituloCode"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="5dip"
+        android:paddingLeft="10dip"
+        android:textStyle="bold"
+        android:textSize="@dimen/tittle_chapters_Tablet"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvFraccionTlc"
+        android:text="Fracción : "
+        style="@style/styleCode"
+        android:layout_marginTop="40dp"
+        android:paddingBottom="5dip"
+        android:paddingLeft="10dip"
+        android:textSize="26dp"
+        android:paddingTop="10dp" />
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="@color/colorAccent"
+        android:padding="25dip"
+        android:layout_below="@+id/tableLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="100dp"
+        android:id="@+id/fill_parent2"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvFraccionAladiCode"
+        android:text=""
+        style="@style/styleCode1"
+        android:layout_marginTop="40dp"
+        android:paddingBottom="5dip"
+        android:paddingLeft="130dip"
+        android:textSize="26dp"
+        android:layout_gravity="center_horizontal|top"
+        android:paddingTop="10dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvAladi"
+        android:layout_width="match_parent"
+        android:layout_height="1090dp"
+        android:layout_marginTop="105dp"
+        android:layout_below="@+id/fill_parent2"
+        android:layout_gravity="center_horizontal|top">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</FrameLayout>

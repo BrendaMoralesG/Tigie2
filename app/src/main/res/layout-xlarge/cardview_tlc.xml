@@ -1,0 +1,136 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/cvChapters"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="12dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/colorDiverColor">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:src="@drawable/z_geo"
+                android:id="@+id/ivFlagIcon2"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:id="@+id/tlcCountry"
+                android:text=""
+                android:textSize="16dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/colorPrimaryDark4"
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_height="100dp"
+            android:id="@+id/ivFlagIcon"
+            android:src="@drawable/z_eua"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="@color/colorAzul2"
+            android:padding="25dip"
+            android:id="@+id/fill_parentAla1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/ly74"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DOF:"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/colorVerde"
+                    android:gravity="center"/>
+
+
+                <TextView
+                    android:id="@+id/tlcDof"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_marginLeft="25dp"
+                    style="@style/styleCode1"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ly74"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ADVAL:"
+
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/colorVerde"
+                    android:gravity="center"/>
+
+
+                <TextView
+                    android:id="@+id/tlcAdval"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    style="@style/styleCode1"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,183 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/cvChapters"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative1"
+        >
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorDiverColor">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:src="@drawable/z_geo"
+                android:id="@+id/iconALianceCountry"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:id="@+id/tvPaisAllianceCode"
+                android:text=""
+                android:textSize="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="18dp"
+                android:textColor="@color/colorPrimaryDark4"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorAzul2"
+            android:padding="25dip"
+            android:id="@+id/vi2"
+            android:layout_below="@+id/layout1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <RelativeLayout
+            android:id="@+id/relativeModu"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/vi2"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/z_chile"
+                android:id="@+id/ivFlagIconAlliance"
+                android:layout_gravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="10dp"
+                android:layout_centerHorizontal="true" />
+
+
+            <LinearLayout
+                android:id="@+id/ly1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivFlagIconAlliance"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/z_rate"
+                    android:id="@+id/iconAllianceAdval"
+                    android:layout_marginLeft="18dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvAdvaloremAlliance"
+                    android:text="Adval :  "
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/colorVerde"
+                    android:layout_toRightOf="@+id/iconAnnex0"
+                    android:layout_toEndOf="@+id/iconAnnex0"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvAdvaloremAllianceCode"
+                    android:text=""
+                    android:textColor="@color/colorPrimaryDark4"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/tvAdvaloremAlliance"
+                    android:layout_toEndOf="@+id/tvAdvaloremAlliance" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorAzul2"
+                android:padding="25dip"
+                android:id="@+id/vi3"
+                android:layout_above="@+id/ly1"
+
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <LinearLayout
+                android:id="@+id/ly2"
+                android:layout_below="@+id/ly1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/z_dof3"
+                    android:id="@+id/iconAllianceDof"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvDofAlliance"
+                    android:layout_marginTop="3dp"
+                    android:text="DOF : "
+                    android:textColor="@color/colorVerde"
+                    android:layout_marginLeft="22dp"
+                    android:layout_toRightOf="@+id/tvDofAlliance"
+                    android:layout_toEndOf="@+id/tvDofAlliance"
+                    />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="20dp"
+                    android:id="@+id/tvDofAllianceCode"
+                    android:layout_marginTop="3dp"
+                    android:text=""
+                    android:textColor="@color/colorPrimaryDark4"
+                    android:layout_marginLeft="28dp"
+                    android:layout_toRightOf="@+id/tvDofAlliance"
+                    android:layout_toEndOf="@+id/tvDofAlliance"/>
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>
