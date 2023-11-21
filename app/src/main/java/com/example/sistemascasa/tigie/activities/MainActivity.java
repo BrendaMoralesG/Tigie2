@@ -51,7 +51,6 @@ public class MainActivity extends AppCompatActivity  {
     String token;
 
     public static MainActivity instance = null;
-//HOLA ESTE ES UN CAMBIO PARA PROBAR EL REPOSITORIO DE GITHUB
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         dataBase = null;
